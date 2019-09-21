@@ -1,0 +1,8 @@
+c:\users\marcin\documents\visual studio 2015\Projects\CurrencyExtractor\CurrencyExtractor\bin\Debug\CurrencyExtractor.exe.config
+c:\users\marcin\documents\visual studio 2015\Projects\CurrencyExtractor\CurrencyExtractor\bin\Debug\CurrencyExtractor.exe
+c:\users\marcin\documents\visual studio 2015\Projects\CurrencyExtractor\CurrencyExtractor\bin\Debug\CurrencyExtractor.pdb
+c:\users\marcin\documents\visual studio 2015\Projects\CurrencyExtractor\CurrencyExtractor\bin\Debug\Newtonsoft.Json.dll
+c:\users\marcin\documents\visual studio 2015\Projects\CurrencyExtractor\CurrencyExtractor\bin\Debug\Newtonsoft.Json.xml
+c:\users\marcin\documents\visual studio 2015\Projects\CurrencyExtractor\CurrencyExtractor\obj\Debug\CurrencyExtractor.csprojResolveAssemblyReference.cache
+c:\users\marcin\documents\visual studio 2015\Projects\CurrencyExtractor\CurrencyExtractor\obj\Debug\CurrencyExtractor.exe
+c:\users\marcin\documents\visual studio 2015\Projects\CurrencyExtractor\CurrencyExtractor\obj\Debug\CurrencyExtractor.pdb
