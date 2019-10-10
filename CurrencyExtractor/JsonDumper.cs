@@ -23,5 +23,23 @@ namespace CurrencyExtractor
                 Console.WriteLine("Error during serialization. Message: " + e.Message);
             }
         }
+
+        public static void DumpJsonsToFiles(string path, IEnumerable<MediatedSchema> jsons)
+        {
+            try
+            {
+                int counter = 0;
+                foreach (var json in jsons)
+                {
+                    counter++;
+                    string serialized = JsonConvert.SerializeObject(json, Formatting.Indented);
+                    File.WriteAllText(path + "curr" + counter.ToString() + ".json", serialized);
+                }
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("Error during serialization. Message: " + e.Message);
+            }
+        }
     }
 }

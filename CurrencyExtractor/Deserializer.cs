@@ -18,5 +18,14 @@ namespace CurrencyExtractor
 
             return finalOutput;
         }
+
+        public static MediatedSchema DeserializeToMediatedSchema(string rawApiJson, string rawAPIV4Json)
+        {
+            MediatedSchema finalOutput = new MediatedSchema();
+            finalOutput.API = JsonConvert.DeserializeObject<API>(rawApiJson);
+            finalOutput.APIV4 = JsonConvert.DeserializeObject<APIV4>(rawAPIV4Json);
+
+            return finalOutput;
+        }
     }
 }

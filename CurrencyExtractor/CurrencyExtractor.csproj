@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{19C3F6D3-AA3C-48BF-A698-D60F29AC46F4}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CurrencyExtractor</RootNamespace>
     <AssemblyName>CurrencyExtractor</AssemblyName>
@@ -54,11 +54,15 @@
     <Compile Include="Extractor.cs" />
     <Compile Include="JsonDumper.cs" />
     <Compile Include="Logger.cs" />
+    <Compile Include="Models\API.cs" />
     <Compile Include="Models\ApiLayerAPI.cs" />
+    <Compile Include="Models\APIV4.cs" />
     <Compile Include="Models\ExChangeRatesAPI.cs" />
+    <Compile Include="Models\MediatedSchema.cs" />
     <Compile Include="Models\Quotes.cs" />
     <Compile Include="Models\Rates.cs" />
     <Compile Include="Models\FinalOutput.cs" />
+    <Compile Include="Models\RatesV4.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

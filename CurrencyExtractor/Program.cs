@@ -16,12 +16,16 @@ namespace CurrencyExtractor
 
             try
             {
-                Console.WriteLine("Starting extraction...");
-                FinalOutput finalOutput = Extractor.GetOutputFromFile("live.json", "latest.json");
-                Console.WriteLine("FinalOutput object deserialized");
+                Console.WriteLine("Starting integration");
+                Console.WriteLine("Extraction started");
+                Console.WriteLine("Establishing connection...");
+                List<MediatedSchema> mediatedSchemas = Extractor.GetAllFromWeb().ToList();
+                Console.WriteLine("Mediated schema objects deserialized");
 
-                Console.WriteLine("Writing to file");
-                JsonDumper.DumpJsonToFile("final.json", finalOutput);
+                Console.WriteLine("Extraction successful");
+
+                Console.WriteLine("Writing to files");
+                JsonDumper.DumpJsonsToFiles("../output/", mediatedSchemas);
 
                 Console.WriteLine("Extraction successful");
                 Console.ReadKey();
