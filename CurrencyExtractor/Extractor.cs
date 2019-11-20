@@ -81,5 +81,21 @@ namespace CurrencyExtractor
                 yield return Deserializer.DeserializeToMediatedSchema(api, apiv4);
             }
         }
+
+        public static IEnumerable<MediatedSchema> GetAllFromWeb(IProgress<string> progress)
+        {
+            WebClient webClient = new WebClient();
+
+            int counter = 0;
+            foreach (var curr in currencies)
+            {
+                counter++;
+                string apiv4 = webClient.DownloadString("https://api.exchangerate-api.com/v4/latest/" + curr);
+                string api = webClient.DownloadString("https://api.exchangeratesapi.io/latest?base=" + curr);
+                progress.Report(counter + "/" + currencies.Length + " extracted");
+
+                yield return Deserializer.DeserializeToMediatedSchema(api, apiv4);
+            }
+        }
     }
 }
